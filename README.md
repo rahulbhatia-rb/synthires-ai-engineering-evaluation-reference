@@ -11,7 +11,11 @@ A compact, tested rubric engine for reviewing AI-generated technical answers. It
 
 ```bash
 python3 -m unittest discover -s tests -v
+python3 -m src.app < examples/evaluations.jsonl
 ```
+
+The JSONL rubric demonstrates a transparent weighted scoring policy and makes
+the accept-versus-review threshold reproducible.
 
 ## Scope
 
